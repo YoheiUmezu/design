@@ -1,0 +1,112 @@
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#navbar {
+    width: 100%;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    background: rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+}
+
+label {
+    margin-right: 40px;
+    font-size: 25px;
+    line-height: 70px;
+    margin-top: 10px;
+    padding: 0 10px;
+    float: right;
+    width: 25px;
+    display: none;
+}
+
+label i {
+    color: #fff;
+    position: relative;
+    margin-left: 10px;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.logo a {
+    text-decoration: none;
+    float: left;
+    margin-left: 40px;
+    margin-top: 2px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.nav-img {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/event6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        padding-top: 10px;
+    }
+    .logo {
+        position: absolute;
+        top: 5px;
+        font-size: 20px;
+    }
+    .label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: absolute;
+        width: 50%;
+        margin-left: 50px;
+        text-align: center;
+        top: 80px;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        padding: 0;
+        margin: 0;
+        color: #c75b0e;
+        background-color: rgba(0,0,0,0.8);
+        border-bottom: 1.5px solid #c6c6c4;
+    }
+    #nav-toggle:checked ~ .menu {
+        display: block;
+    }
+
+    .menu-img {
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {}
